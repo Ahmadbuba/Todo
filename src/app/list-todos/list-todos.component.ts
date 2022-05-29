@@ -21,7 +21,7 @@ export class ListTodosComponent implements OnInit {
   todos = [
     new Todo(1,'Learn to dance',false, new Date()),
     new Todo(2,'Become an Expert at Angular',false, new Date()),
-    new Todo(3,'Visit India',false, new Date())
+    new Todo(3,'Visit Bangalor',false, new Date())
     // {id : 1, description :'Learn to Dance'},
     // {id : 2, description : 'Become an Expert at Angular'},
     // {id : 3, description : 'Visit India'}

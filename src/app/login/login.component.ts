@@ -9,7 +9,7 @@ import { HardcodedAuthenticationService } from '../service/hardcoded-authenticat
 })
 export class LoginComponent implements OnInit {
 
-username = 'in28minutes'
+username = ''
 password = ''
 errorMessage = 'Invalid Credentials'
 invalidLogin = false
@@ -19,7 +19,7 @@ invalidLogin = false
 //Angular.giveMeRouter
 //Dependency Injection
 
-  constructor(private router: Router, 
+  constructor(private router: Router,
     private hardecodedAuthenticationService: HardcodedAuthenticationService) { }
 
   ngOnInit() {
@@ -27,7 +27,7 @@ invalidLogin = false
 
   handleLogin(){
     // console.log(this.username)
-    // if(this.username==='in28minutes' && this.password==='dummy'){
+    // if(this.username==='Ahmad' && this.password==='dummy'){
       if(this.hardecodedAuthenticationService.authenticate(this.username,this.password)){
       //Redirect to the welcome page
       this.router.navigate(['welcome',this.username])
